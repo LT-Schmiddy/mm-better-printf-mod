@@ -1,6 +1,6 @@
 #ifndef _STDARG_H
 #define _STDARG_H
-
+// #include "libc/stdarg.h"
 #ifdef __cplusplus
 extern "C" {
 #endif

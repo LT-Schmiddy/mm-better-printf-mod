@@ -6,6 +6,7 @@
 #ifndef STDINT_H_
 #define STDINT_H_
 #include "PR/ultratypes.h"
+#include "libc/stdint.h"
 #include "limits.h"
 
 
@@ -101,22 +102,22 @@ typedef uint64_t uint_fast64_t;
 
 /* 7.18.2.1 Limits of exact-width integer types */
 /*! Expands to 127. Maximum value of an object of type int8_t */
-#define INT8_MAX 127
+// #define INT8_MAX 127
 
 /*! Expands to 32767. Maximum value of an object of type int16_t */
-#define INT16_MAX 32767
+// #define INT16_MAX 32767
 
 /*! Expands to 2147483647. Maximum value of an object of type int32_t */
-#define INT32_MAX 2147483647
+// #define INT32_MAX 2147483647
 
 /*! Expands to 9223372036854775807LL. Maximum value of an object of type int64_t */
-#define INT64_MAX 9223372036854775807LL
+// #define INT64_MAX 9223372036854775807LL
 
 /*! Expands to -128. Minimum value of an object of type int8_t */
-#define INT8_MIN -128
+// #define INT8_MIN -128
 
 /*! Expands to -32768. Minimum value of an object of type int16_t */
-#define INT16_MIN -32768
+// #define INT16_MIN -32768
 /*
    Note:  the literal "most negative int" cannot be written in C --
    the rules in the standard (section 6.4.4.1 in C99) will give it
@@ -124,22 +125,22 @@ typedef uint64_t uint_fast64_t;
    any larger signed type) must be written via a constant expression.
 */
 /*! Expands to (-INT32_MAX - 1). Minimum value of an object of type int32_t */
-#define INT32_MIN (-INT32_MAX - 1)
+// #define INT32_MIN (-INT32_MAX - 1)
 
 /*! Expands to (-INT64_MAX - 1). Minimum value of an object of type int64_t */
-#define INT64_MIN (-INT64_MAX - 1)
+// #define INT64_MIN (-INT64_MAX - 1)
 
 /*! Expands to 255. Maximum value of an object of type uint8_t */
-#define UINT8_MAX 255
+// #define UINT8_MAX 255
 
 /*! Expands to 65535. Maximum value of an object of type uint16_t */
-#define UINT16_MAX 65535
+// #define UINT16_MAX 65535
 
 /*! Expands to 4294967295U. Maximum value of an object of type uint32_t */
-#define UINT32_MAX 4294967295U
+// #define UINT32_MAX 4294967295U
 
 /*! Expands to 18446744073709551615ULL. Maximum value of an object of type uint64_t */
-#define UINT64_MAX 18446744073709551615ULL
+// #define UINT64_MAX 18446744073709551615ULL
 
 /* 7.18.2.2 Limits of minimum-width integer types */
 /*! Minimum value of an object of type int_least8_t */
@@ -261,13 +262,13 @@ typedef uint64_t uint_fast64_t;
 #else // __WORDSIZE is 32 bits
 
 /*! Minimum value of an object of type intptr_t */
-#define INTPTR_MIN INT32_MIN
+// #define INTPTR_MIN INT32_MIN
 
 /*! Maximum value of an object of type intptr_t */
-#define INTPTR_MAX INT32_MAX
+// #define INTPTR_MAX INT32_MAX
 
 /*! Maximum value of an object of type uintptr_t  */
-#define UINTPTR_MAX UINT32_MAX
+// #define UINTPTR_MAX UINT32_MAX
 
 /*! Minimum value of an object of type ptrdiff_t */
 #define PTRDIFF_MIN INT32_MIN

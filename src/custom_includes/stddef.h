@@ -3,6 +3,8 @@
 
 // #include <_types/_ptrdiff_t.h>
 // #include <_types/_size_t.h>
+#include "PR/ultratypes.h"
+#include "libc/stddef.h"
 
 #pragma mark - NULL -
 
@@ -17,15 +19,18 @@
 
 #pragma mark - offsetof -
 
+/* Not needed.
 #if __GNUC__ > 3
 
-/*! byte offset from the beginning of a struct type to specified member  */
-#define offsetof(type, member) __builtin_offsetof(type, member)
+// byte offset from the beginning of a struct type to specified member
+// #define offsetof(type, member) __builtin_offsetof(type, member)
 #else
 
-/*! byte offset from the beginning of a struct type to specified member  */
-#define offsetof(type, member) ((size_t)((char*)&(((type*)0)->member) - (char*)0))
+// byte offset from the beginning of a struct type to specified member  
+// #define offsetof(type, member) ((size_t)((char*)&(((type*)0)->member) - (char*)0))
 #endif
+*/
+
 
 #pragma mark - max_align_t -
 

@@ -32,9 +32,10 @@
 #ifndef _PRINTF_H_
 #define _PRINTF_H_
 
-#include "custom_includes/stdarg.h"
-#include "custom_includes/stddef.h"
-#include "mod_globals.h"
+#include "libc/stdarg.h"
+// #include "libc/stdarg.h"
+#include "libc/stddef.h"
+// #include "libc/stddef.h"
 
 #ifdef __cplusplus
 extern "C" {
